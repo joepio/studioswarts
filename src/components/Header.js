@@ -3,11 +3,17 @@ import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 
 const Header = (props) => (
-    <header id="header" className="alt">
-        <Link to="/" className="logo"><strong>Studio Swarts</strong></Link>
-        <nav>
+    <header id="header" className="alt" style={{
+        position: 'absolute',
+        height: '2rem',
+        padding: '1rem',
+    }}>
+        <Link to="/" style={{
+            color: "white"
+        }}><strong>Studio Swarts</strong></Link>
+        {/* <nav>
             <a className="menu-link" onClick={props.onToggleMenu} href="javascript:;">Menu</a>
-        </nav>
+        </nav> */}
     </header>
 )
 

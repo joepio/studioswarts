@@ -1,14 +1,26 @@
 import React from 'react'
 
+import { styles } from '../styles'
+
 const Banner = (props) => (
-    <section id="banner" className="major">
+    <section id="banner" className="major" style={{
+        background: `url(${props.img})`,
+        height: '50rem',
+        paddingTop: '10rem',
+        fontSize: '3rem',
+        backgroundRepeat: 'none',
+        backgroundSize: 'cover',
+    }}>
         <div className="inner">
-            <header className="major">
-                <h1>We turn brands into spaces</h1>
+            <header className="major" style={{
+                textAlign: 'center',
+                textDecoration: 'none',
+                color: 'white',
+                fontSize: '2rem',
+                fontFamily: styles.headerFont,
+            }}>
+                {props.children}
             </header>
-            <div className="content">
-                <p>Studio Swarts specializes in spatial design.</p>
-            </div>
         </div>
     </section>
 )
