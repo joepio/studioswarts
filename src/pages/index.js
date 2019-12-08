@@ -4,10 +4,10 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Banner from '../components/Banner'
 
-import pic10 from '../assets/images/pic10.jpg'
+import pic1 from '../assets/images/home/1.jpg'
+
 import ProjectPreview from '../components/ProjectPreview'
 import Columns from '../components/Columns'
-
 
 class HomeIndex extends React.Component {
     render() {
@@ -22,7 +22,7 @@ class HomeIndex extends React.Component {
                     ]}
                 >
                 </Helmet>
-                <Banner img={pic10}>
+                <Banner img={pic1}>
                     <Link to="/budweiser">
                         <h2>BUDWEISER</h2>
                     </Link>
@@ -42,7 +42,7 @@ class HomeIndex extends React.Component {
                     <ProjectPreview />
                 </Columns>
                 <Link to="/generic" className="image">
-                    <img src={pic10} alt="" />
+                    <img src={pic1} alt="" />
                 </Link>
                 <Banner />
             </Layout>

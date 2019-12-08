@@ -10,7 +10,7 @@ const types = {
 /** Fixed width image with header text links to Project page */
 const ProjectPreview = (props) => (
   <Link to={props.url}>
-    <h2>props.title</h2>
+    <h2>{props.title}</h2>
   </Link>
 )
 
