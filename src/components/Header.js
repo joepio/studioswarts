@@ -21,14 +21,7 @@ const Header = props => (
     >
       <strong>Studio Swarts</strong>
     </Link>
-    {/* <nav>
-            <a className="menu-link" onClick={props.onToggleMenu} href="javascript:;">Menu</a>
-        </nav> */}
   </header>
 )
-
-Header.propTypes = {
-  onToggleMenu: PropTypes.func,
-}
 
 export default Header

@@ -53,7 +53,7 @@ class Layout extends React.Component {
           <Contact />
           <Footer />
         </div>
-        <Menu onToggleMenu={this.handleToggleMenu} />
+        {/* <Menu onToggleMenu={this.handleToggleMenu} /> */}
       </div>
     )
   }
