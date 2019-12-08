@@ -12,36 +12,42 @@ import ProjectPreview from '../components/ProjectPreview'
 import Columns from '../components/Columns'
 
 class HomeIndex extends React.Component {
-    render() {
-        return (
-            <Layout>
-                <Helmet
-                    title="Studio Swarts - spatial design"
-                    meta={[
-                        { name: 'description', content: 'Sample' },
-                        { name: 'keywords', content: 'sample, something' },
-                    ]}
-                >
-                </Helmet>
-                <Banner img={pic1}>
-                    <Link to="/budweiser">
-                        <h2>BUDWEISER</h2>
-                    </Link>
-                    <Link>
-                        <h2>BUDWEISER</h2>
-                    </Link>
-                    <Link>
-                        <h2>BUDWEISER</h2>
-                    </Link>
-                </Banner>
-                <Columns>
-                    <ProjectPreview title="Budweiser" src={budCover} url="/projects/budPR" />
-                    <ProjectPreview title="Eastpak" src={eastpakCover} url="/projects/eastpak2016" />
-
-                </Columns>
-            </Layout>
-        )
-    }
+  render() {
+    return (
+      <Layout>
+        <Helmet
+          title="Studio Swarts - spatial design"
+          meta={[
+            { name: 'description', content: 'Sample' },
+            { name: 'keywords', content: 'sample, something' },
+          ]}
+        ></Helmet>
+        <Banner img={pic1}>
+          <Link to="/budweiser">
+            <h2>BUDWEISER</h2>
+          </Link>
+          <Link>
+            <h2>BUDWEISER</h2>
+          </Link>
+          <Link>
+            <h2>BUDWEISER</h2>
+          </Link>
+        </Banner>
+        <Columns>
+          <ProjectPreview
+            title="Budweiser"
+            src={budCover}
+            url="/projects/budPR"
+          />
+          <ProjectPreview
+            title="Eastpak"
+            src={eastpakCover}
+            url="/projects/eastpak2016"
+          />
+        </Columns>
+      </Layout>
+    )
+  }
 }
 
 export default HomeIndex

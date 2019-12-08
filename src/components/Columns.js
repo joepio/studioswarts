@@ -1,18 +1,19 @@
 import React from 'react'
 
-const types = {
-}
+const types = {}
 
 /** Fixed width image with header text links to Project page */
-const Columns = (props) => (
-    <div style={{
+const Columns = props => (
+  <div
+    style={{
       display: 'flex',
       margin: '1rem',
-    }}>
-      {props.children}
-    </div>
+    }}
+  >
+    {props.children}
+  </div>
 )
 
-Columns.propTypes = types;
+Columns.propTypes = types
 
 export default Columns

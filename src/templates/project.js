@@ -1,9 +1,9 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Img from "gatsby-image"
+import React from 'react'
+import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
 import Helmet from 'react-helmet'
-import Layout from "../components/layout"
-import { styles } from "../styles"
+import Layout from '../components/layout'
+import { styles } from '../styles'
 
 const heroStyle = {
   height: '50rem',
@@ -46,18 +46,23 @@ export default ({ data }) => {
       </Helmet>
       <div style={heroStyle}>
         <h1 style={heroTextStyle}>{post.frontmatter.title}</h1>
-        <Img style={heroImageStyle} fluid={images[1].node.childImageSharp.fluid} />
+        <Img
+          style={heroImageStyle}
+          fluid={images[1].node.childImageSharp.fluid}
+        />
       </div>
       <div style={textStyle} dangerouslySetInnerHTML={{ __html: post.html }} />
       {images.map(img => (
-        <div style={{
-          padding: "1rem",
-          paddingTop: "0",
-        }}>
+        <div
+          style={{
+            padding: '1rem',
+            paddingTop: '0',
+          }}
+        >
           <Img fluid={img.node.childImageSharp.fluid} />
         </div>
       ))}
-   </Layout>
+    </Layout>
   )
 }
 export const query = graphql`
@@ -68,11 +73,7 @@ export const query = graphql`
         title
       }
     }
-    allFile(
-      filter: {
-        absolutePath: { regex: $absolutePathRegex }
-      }
-    ) {
+    allFile(filter: { absolutePath: { regex: $absolutePathRegex } }) {
       totalCount
       edges {
         node {

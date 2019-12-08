@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Studio Swarts - spatial design",
-    author: "Steven Swarts",
-    description: "Homepage for Studio Swarts - Spatial design."
+    title: 'Studio Swarts - spatial design',
+    author: 'Steven Swarts',
+    description: 'Homepage for Studio Swarts - Spatial design.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -38,5 +38,5 @@ module.exports = {
       },
     },
   ],
-  pathPrefix: "/studioswarts",
+  pathPrefix: '/studioswarts',
 }
