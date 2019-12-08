@@ -7,6 +7,7 @@ const Header = (props) => (
         position: 'absolute',
         height: '2rem',
         padding: '1rem',
+        zIndex: 10,
     }}>
         <Link to="/" style={{
             color: "white"

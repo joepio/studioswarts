@@ -5,13 +5,14 @@ import Layout from '../components/layout'
 import Banner from '../components/Banner'
 
 import pic1 from '../assets/images/home/1.jpg'
+import budCover from '../assets/images/projects/budPR/1.jpg'
+import eastpakCover from '../assets/images/projects/eastpak2016/1.jpg'
 
 import ProjectPreview from '../components/ProjectPreview'
 import Columns from '../components/Columns'
 
 class HomeIndex extends React.Component {
     render() {
-
         return (
             <Layout>
                 <Helmet
@@ -34,17 +35,10 @@ class HomeIndex extends React.Component {
                     </Link>
                 </Banner>
                 <Columns>
-                    <ProjectPreview />
-                    <ProjectPreview />
-                    <ProjectPreview />
-                    <ProjectPreview />
-                    <ProjectPreview />
-                    <ProjectPreview />
+                    <ProjectPreview title="Budweiser" src={budCover} url="/projects/budPR" />
+                    <ProjectPreview title="Eastpak" src={eastpakCover} url="/projects/eastpak2016" />
+
                 </Columns>
-                <Link to="/generic" className="image">
-                    <img src={pic1} alt="" />
-                </Link>
-                <Banner />
             </Layout>
         )
     }
