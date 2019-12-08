@@ -5,7 +5,7 @@
 ```sh
 # Install dependencies
 yarn
-# Run server
+# Run server at = http://localhost:8000/
 yarn develop
 # Deploy to github pages
 yarn deploy

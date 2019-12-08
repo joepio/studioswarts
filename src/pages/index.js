@@ -5,6 +5,8 @@ import Layout from '../components/layout'
 import Banner from '../components/Banner'
 
 import pic10 from '../assets/images/pic10.jpg'
+import ProjectPreview from '../components/ProjectPreview'
+import Columns from '../components/Columns'
 
 
 class HomeIndex extends React.Component {
@@ -31,6 +33,14 @@ class HomeIndex extends React.Component {
                         <h2>BUDWEISER</h2>
                     </Link>
                 </Banner>
+                <Columns>
+                    <ProjectPreview />
+                    <ProjectPreview />
+                    <ProjectPreview />
+                    <ProjectPreview />
+                    <ProjectPreview />
+                    <ProjectPreview />
+                </Columns>
                 <Link to="/generic" className="image">
                     <img src={pic10} alt="" />
                 </Link>
