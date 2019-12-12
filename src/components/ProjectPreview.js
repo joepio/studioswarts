@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import Img from 'gatsby-image'
+import Img from 'gatsby-background-image'
 import PropTypes from 'prop-types'
 
 const types = {
@@ -17,10 +17,13 @@ const headerStyle = {
   color: 'white',
   position: 'absolute',
   fontSize: '2rem',
+  bottom: '1rem',
+  left: '1rem',
 }
 
 const previewStyle = {
   maxWidth: '22rem',
+  position: 'relative',
   margin: '1rem',
 }
 
@@ -28,8 +31,10 @@ const previewStyle = {
 const ProjectPreview = props => (
   <Link to={props.url} style={previewStyle}>
     <h2 style={headerStyle}>{props.title}</h2>
-    {props.src && <img style={imgStyle} src={props.src} />}
-    {props.fluid && <Img style={imgStyle} fluid={props.fluid} />}
+    {props.src && <img alt={props.title} style={imgStyle} src={props.src} />}
+    {props.fluid && (
+      <Img alt={props.title} style={imgStyle} fluid={props.fluid} />
+    )}
   </Link>
 )
 

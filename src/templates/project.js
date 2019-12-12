@@ -65,6 +65,7 @@ export default ({ data }) => {
     </Layout>
   )
 }
+
 export const query = graphql`
   query($slug: String!, $absolutePathRegex: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {

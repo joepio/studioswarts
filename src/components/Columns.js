@@ -11,6 +11,9 @@ const Columns = props => (
     style={{
       display: 'flex',
       margin: '1rem',
+      flexFlow: 'column wrap',
+      justifyContent: 'flex-start',
+      alignItems: 'flex-start',
     }}
   >
     {props.children}
