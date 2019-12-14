@@ -9,11 +9,11 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       name: `slug`,
       value: slug,
     })
-    createNodeField({
-      node,
-      name: `identifier`,
-      value: slug,
-    })
+    // createNodeField({
+    //   node,
+    //   name: `identifier`,
+    //   value: slug,
+    // })
   }
 }
 exports.createPages = async ({ graphql, actions }) => {

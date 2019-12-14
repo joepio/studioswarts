@@ -1,4 +1,4 @@
 export const styles = {
-  headerFont: "'Playfair Display', serif",
-  bodyFont: "'Playfair Display', serif",
+  headerFont: "'Faustina', serif",
+  bodyFont: "'Faustina', serif",
 }
