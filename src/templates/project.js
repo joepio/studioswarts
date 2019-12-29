@@ -4,6 +4,7 @@ import Img from 'gatsby-image'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import { styles } from '../styles'
+import styled from 'styled-components'
 
 const heroStyle = {
   height: '50rem',
@@ -32,9 +33,20 @@ const heroTextStyle = {
 const textStyle = {
   textAlign: 'center',
   fontSize: '1.2rem',
-  margin: '2rem',
+  padding: '3rem',
+  maxWidth: '70vw',
+  margin: 'auto',
   fontFamily: styles.bodyFont,
 }
+
+const TitleComp = styled.h1`
+  font-family: Faustina, serif;
+  font-size: 4rem;
+  text-align: center;
+  color: #13131354;
+  padding-top: 2rem;
+  text-transform: uppercase;
+`
 
 export default ({ data }) => {
   const images = data.allFile.edges
@@ -45,18 +57,20 @@ export default ({ data }) => {
         <title>{post.frontmatter.title}</title>
       </Helmet>
       <div style={heroStyle}>
-        <h1 style={heroTextStyle}>{post.frontmatter.title}</h1>
         <Img
           style={heroImageStyle}
           fluid={images[1].node.childImageSharp.fluid}
         />
       </div>
+      <TitleComp>{post.frontmatter.title}</TitleComp>
       <div style={textStyle} dangerouslySetInnerHTML={{ __html: post.html }} />
       {images.map(img => (
         <div
           style={{
             padding: '1rem',
+            maxWidth: '70vw',
             paddingTop: '0',
+            margin: 'auto',
           }}
         >
           <Img fluid={img.node.childImageSharp.fluid} />
