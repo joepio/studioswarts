@@ -15,7 +15,8 @@ const Header = styled.h2`
   color: white;
   position: absolute;
   font-family: ${styles.bodyFont};
-  font-size: 2rem;
+  font-weight: 600;
+  font-size: 1.3rem;
   bottom: 1rem;
   left: 1rem;
   z-index: 1;
@@ -34,9 +35,11 @@ const Wrapper = styled(Link)`
 
 const BackImg = styled.img`
   width: 100%;
-  transition: transform .2s;
+  transition: transform;
+  transition-duration: 1.3s;
 
   &:hover {
+    transition-duration: .3s;
     transform: scale(1.1)
   }
 `
