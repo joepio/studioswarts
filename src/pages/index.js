@@ -53,22 +53,22 @@ const HomeIndex = ({ data }) => {
             />
           )
         })} */}
-        <ProjectPreview title="Bud" src={budPR} url="/projects/budPR" />
-        <ProjectPreview title="Casper Berlin" src={casperBerlin} url="/projects/casperBerlin" />
-        <ProjectPreview title="Casper Sleep Tour" src={casperSleeptour} url="/projects/casperSleeptour" />
-        <ProjectPreview title="Daily Paper Smib" src={dailyPaperSmib} url="/projects/dailyPaperSmib" />
-        <ProjectPreview title="Eastpak 2016" src={eastpak2016} url="/projects/eastpak2016" />
-        <ProjectPreview title="Eastpak 2018 Lissabon" src={eastpak2018Lissabon} url="/projects/eastpak2018Lissabon" />
-        <ProjectPreview title="Eastpak 2018 Rotterdam" src={eastpak2018Rotterdam} url="/projects/eastpak2018Rotterdam" />
-        <ProjectPreview title="Jupiler" src={jupiler} url="/projects/jupiler" />
-        <ProjectPreview title="Karl" src={karl} url="/projects/karl" />
+        <ProjectPreview title="Budweiser PR" src={budPR} url="/projects/budPR" />
+        <ProjectPreview title="Casper KaDeWe" src={casperBerlin} url="/projects/casperBerlin" />
+        <ProjectPreview title="Casper SleepTour" src={casperSleeptour} url="/projects/casperSleeptour" />
+        <ProjectPreview title="Daily Paper X Smib" src={dailyPaperSmib} url="/projects/dailyPaperSmib" />
+        <ProjectPreview title="Eastpak Amsterdam" src={eastpak2016} url="/projects/eastpak2016" />
+        <ProjectPreview title="Eastpak Lisbon" src={eastpak2018Lissabon} url="/projects/eastpak2018Lissabon" />
+        <ProjectPreview title="Eastpak Rotterdam" src={eastpak2018Rotterdam} url="/projects/eastpak2018Rotterdam" />
+        <ProjectPreview title="Jupiler festival" src={jupiler} url="/projects/jupiler" />
+        <ProjectPreview title="Karl Lagerfeld" src={karl} url="/projects/karl" />
         <ProjectPreview title="Kingpins" src={kingpins} url="/projects/kingpins" />
         <ProjectPreview title="Napapijri" src={napapijri} url="/projects/napapijri" />
         <ProjectPreview title="Panorama" src={panorama} url="/projects/panorama" />
         <ProjectPreview title="Scotch & Soda" src={scotch} url="/projects/scotch" />
         <ProjectPreview title="Unilever" src={unilever} url="/projects/unilever" />
         <ProjectPreview title="Wrangler" src={wrangler} url="/projects/wrangler" />
-        <ProjectPreview title="Zalando" src={zalando} url="/projects/zalando" />
+        <ProjectPreview title="Zalando B&B" src={zalando} url="/projects/zalando" />
       </Columns>
     </Layout>
   )
