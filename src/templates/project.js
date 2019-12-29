@@ -21,15 +21,6 @@ const heroImageStyle = {
   bottom: 0,
 }
 
-const heroTextStyle = {
-  position: 'absolute',
-  bottom: '2rem',
-  fontFamily: styles.headerFont,
-  marginLeft: '1rem',
-  color: 'white',
-  zIndex: 1,
-}
-
 const textStyle = {
   textAlign: 'center',
   fontSize: '1.2rem',
@@ -38,6 +29,16 @@ const textStyle = {
   margin: 'auto',
   fontFamily: styles.bodyFont,
 }
+
+const ImgWrapper = styled.div`
+  padding: 1rem;
+  max-width: 70vw;
+  padding-top: 0;
+  margin: auto;
+  @media(max-width: 768px) {
+    max-width: 100vh;
+  }
+`
 
 const TitleComp = styled.h1`
   font-family: Faustina, serif;
@@ -70,16 +71,9 @@ export default ({ data }) => {
           return null
         }
         return (
-          <div
-            style={{
-              padding: '1rem',
-              maxWidth: '70vw',
-              paddingTop: '0',
-              margin: 'auto',
-            }}
-          >
+          <ImgWrapper>
             <Img fluid={img.node.childImageSharp.fluid} />
-          </div>
+          </ImgWrapper>
         )
       })}}
     </Layout>
