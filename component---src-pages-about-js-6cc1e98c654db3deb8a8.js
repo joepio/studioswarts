@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{213:function(a,e,n){"use strict";n.r(e);var o=n(0),t=n.n(o),r=n(209),i=n(15).a.div.withConfig({displayName:"about__PageWrapper",componentId:"kplld1-0"})(["background-color:black;max-width:800px;color:white;margin:auto;"]);e.default=function(){return t.a.createElement(r.a,null,t.a.createElement(i,null,"Over mij"))}}}]);
+//# sourceMappingURL=component---src-pages-about-js-6cc1e98c654db3deb8a8.js.map
