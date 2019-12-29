@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import Img from 'gatsby-background-image'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import { styles } from '../styles'
 
 const types = {
   title: PropTypes.string,
@@ -13,6 +14,7 @@ const types = {
 const Header = styled.h2`
   color: white;
   position: absolute;
+  font-family: ${styles.bodyFont};
   font-size: 2rem;
   bottom: 1rem;
   left: 1rem;

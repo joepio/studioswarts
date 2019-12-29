@@ -43,7 +43,7 @@ class Layout extends React.Component {
           }`}
       >
         <link
-          href="https://fonts.googleapis.com/css?family=Faustina&display=swap"
+          href="https://fonts.googleapis.com/css?family=Faustina|Montserrat:400,600&display=swap"
           rel="stylesheet"
         />
         <div id="wrapper">
