@@ -25,6 +25,7 @@ const previewStyle = {
   maxWidth: '22rem',
   position: 'relative',
   margin: '1rem',
+  flexBasis: '19rem',
 }
 
 /** Fixed width image with header text links to Project page */

@@ -9,9 +9,10 @@ const types = {
 const Columns = props => (
   <div
     style={{
+      justifySelf: 'center',
       display: 'flex',
       margin: '1rem',
-      flexFlow: 'column wrap',
+      flexFlow: 'row wrap',
       justifyContent: 'flex-start',
       alignItems: 'flex-start',
     }}
