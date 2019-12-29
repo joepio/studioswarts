@@ -13,7 +13,7 @@ const LogoImg = styled.img`
   left: calc(50% - 3.5rem);
 `
 
-const NavBar = styled.header`
+const NavBar = styled.nav`
   position: absolute;
   height: 2rem;
   z-index: 10;

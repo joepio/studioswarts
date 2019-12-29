@@ -1,26 +1,23 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
-const types = {
-  children: PropTypes.children,
-}
+const Columns = styled.div`
+  justify-self: center;
+  display: flex;
+  margin: 1rem;
+  flex-flow: column wrap;
+  align-content: space-between;
+  height: 2600px;
+  max-width: 70vw;
+  margin: auto;
+  margin-top: 5rem;
 
-/** Fixed width image with header text links to Project page */
-const Columns = props => (
-  <div
-    style={{
-      justifySelf: 'center',
-      display: 'flex',
-      margin: '1rem',
-      flexFlow: 'row wrap',
-      justifyContent: 'flex-start',
-      alignItems: 'flex-start',
-    }}
-  >
-    {props.children}
-  </div>
-)
-
-Columns.propTypes = types
+  &::before,
+  &::after {
+    content: "";
+    flex-basis: 100%;
+    width: 0;
+    order: 2;
+  }
+`
 
 export default Columns

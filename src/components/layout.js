@@ -1,7 +1,7 @@
 import React from 'react'
 
 import '../assets/scss/main.scss'
-import Header from './Header'
+import Navbar from './Navbar'
 import Contact from './Contact'
 import Footer from './Footer'
 
@@ -40,14 +40,14 @@ class Layout extends React.Component {
       <div
         className={`body ${this.state.loading} ${
           this.state.isMenuVisible ? 'is-menu-visible' : ''
-        }`}
+          }`}
       >
         <link
           href="https://fonts.googleapis.com/css?family=Faustina&display=swap"
           rel="stylesheet"
         />
         <div id="wrapper">
-          <Header onToggleMenu={this.handleToggleMenu} />
+          <Navbar onToggleMenu={this.handleToggleMenu} />
           {children}
           <Contact />
           <Footer />
