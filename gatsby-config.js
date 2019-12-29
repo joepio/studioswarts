@@ -38,5 +38,6 @@ module.exports = {
       },
     },
   ],
-  pathPrefix: '/studioswarts',
+  // Hosting on github pages requires a path prefix
+  // pathPrefix: '/studioswarts',
 }
