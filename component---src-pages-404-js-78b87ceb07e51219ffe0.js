@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{222:function(e,n,a){"use strict";a.r(n);var t=a(0),l=a.n(t),i=a(216);n.default=function(){return l.a.createElement(i.a,null,l.a.createElement("div",{id:"main",className:"alt"},l.a.createElement("section",{id:"one"},l.a.createElement("div",{className:"inner"},l.a.createElement("h1",null,"Niet gevonden"),l.a.createElement("p",null,"Deze pagina bestaat niet (meer).")))))}}}]);
+//# sourceMappingURL=component---src-pages-404-js-78b87ceb07e51219ffe0.js.map
