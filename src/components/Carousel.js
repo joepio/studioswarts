@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import budPR from '../assets/images/home/1.jpg'
-import unilever from '../assets/images/home/2.jpg'
-import jupiler from '../assets/images/home/3.jpg'
-import napapijri from '../assets/images/home/4.jpg'
+import budPR from '../assets/images/home/01.jpg'
+import unilever from '../assets/images/home/02.jpg'
+import jupiler from '../assets/images/home/03.jpg'
+import napapijri from '../assets/images/home/04.jpg'
 
 import { styles } from '../styles'
 import styled, { keyframes } from 'styled-components'

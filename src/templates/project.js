@@ -64,18 +64,24 @@ export default ({ data }) => {
       </div>
       <TitleComp>{post.frontmatter.title}</TitleComp>
       <div style={textStyle} dangerouslySetInnerHTML={{ __html: post.html }} />
-      {images.map(img => (
-        <div
-          style={{
-            padding: '1rem',
-            maxWidth: '70vw',
-            paddingTop: '0',
-            margin: 'auto',
-          }}
-        >
-          <Img fluid={img.node.childImageSharp.fluid} />
-        </div>
-      ))}
+      {images.map((img, index) => {
+        // The first two images are for the cover
+        if (index === 1 || index === 0) {
+          return null
+        }
+        return (
+          <div
+            style={{
+              padding: '1rem',
+              maxWidth: '70vw',
+              paddingTop: '0',
+              margin: 'auto',
+            }}
+          >
+            <Img fluid={img.node.childImageSharp.fluid} />
+          </div>
+        )
+      })}}
     </Layout>
   )
 }
@@ -88,7 +94,7 @@ export const query = graphql`
         title
       }
     }
-    allFile(filter: { absolutePath: { regex: $absolutePathRegex } }) {
+    allFile(sort: {fields: name, order: ASC}, filter: { absolutePath: { regex: $absolutePathRegex } }) {
       totalCount
       edges {
         node {
