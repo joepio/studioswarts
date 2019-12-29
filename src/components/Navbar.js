@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import logo from '../assets/logo.svg'
 import styled from 'styled-components'
 import AboutFiller from './AboutFiller'
+import { styles } from '../styles'
 
 const LogoLink = styled(Link)`
 `
@@ -29,20 +30,27 @@ const NavLinks = styled.div`
 `
 
 const LinkItem = styled(Link)`
-  color: blue;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  font-family: ${styles.bodyFont};
+  text-transform: uppercase;
+  padding: 1rem;
+  font-size: .8rem;
 `
 
 const AboutLink = () => {
   const [isOpen, setOpen] = useState(false)
 
   return (
-    <div>
+    <React.Fragment>
       <LinkItem
         onMouseOver={() => setOpen(true)}
         onMouseOut={() => setOpen(false)}
+      // to="/about"
       >about</LinkItem>
       {isOpen ? <AboutFiller /> : null}
-    </div>
+    </React.Fragment>
   )
 };
 
@@ -53,8 +61,7 @@ const Header = () => (
     </LogoLink>
     <NavLinks>
       <AboutLink />
-      <LinkItem to="/about">about</LinkItem>
-      <LinkItem>contact</LinkItem>
+      <LinkItem to="#contact">contact</LinkItem>
     </NavLinks>
   </NavBar>
 )

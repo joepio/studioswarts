@@ -33,7 +33,7 @@ const FooterWrapper = styled.footer`
 `
 
 const Footer = () =>
-  <FooterWrapper>
+  <FooterWrapper id="contact">
     <LogoImg src={logo} alt="Studio Swarts logo" />
     <p>
       <a href="tel:+310621210124">+31 (0) 621 210 124</a>
