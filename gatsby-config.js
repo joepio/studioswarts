@@ -37,6 +37,9 @@ module.exports = {
         defaultQuality: 90,
       },
     },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+    }
   ],
   // Hosting on github pages requires a path prefix
   // pathPrefix: '/studioswarts',
