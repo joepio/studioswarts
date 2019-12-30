@@ -13,6 +13,7 @@ export const LogoImg = styled.img`
   width: 7rem;
   height: 4rem;
   left: calc(50% - 3.5rem);
+  background-color: black;
 `
 
 const NavBar = styled.nav`
@@ -27,6 +28,11 @@ const NavBar = styled.nav`
 
 const NavLinks = styled.div`
   margin-left: auto;
+  display: flex;
+
+  @media(max-width: ${styles.smallScreen}) {
+    flex-direction: column;
+  }
 `
 
 const LinkItem = styled(Link)`
