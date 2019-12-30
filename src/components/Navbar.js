@@ -13,7 +13,6 @@ export const LogoImg = styled.img`
   width: 7rem;
   height: 4rem;
   left: calc(50% - 3.5rem);
-  background-color: black;
 `
 
 const NavBar = styled.nav`
