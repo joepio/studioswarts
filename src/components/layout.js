@@ -2,7 +2,6 @@ import React from 'react'
 
 import '../assets/scss/main.scss'
 import Navbar from './Navbar'
-import Contact from './Contact'
 import Footer from './Footer'
 
 class Layout extends React.Component {
@@ -43,13 +42,12 @@ class Layout extends React.Component {
           }`}
       >
         <link
-          href="https://fonts.googleapis.com/css?family=Faustina&display=swap"
+          href="https://fonts.googleapis.com/css?family=Faustina|Montserrat:400,600&display=swap"
           rel="stylesheet"
         />
         <div id="wrapper">
           <Navbar onToggleMenu={this.handleToggleMenu} />
           {children}
-          <Contact />
           <Footer />
         </div>
         {/* <Menu onToggleMenu={this.handleToggleMenu} /> */}

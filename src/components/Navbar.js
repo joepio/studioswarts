@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import logo from '../assets/logo.svg'
 import styled from 'styled-components'
+import AboutFiller from './AboutFiller'
+import { styles } from '../styles'
 
 const LogoLink = styled(Link)`
 `
 
-const LogoImg = styled.img`
+export const LogoImg = styled.img`
   position: absolute;
   width: 7rem;
   height: 4rem;
@@ -28,17 +30,38 @@ const NavLinks = styled.div`
 `
 
 const LinkItem = styled(Link)`
-  color: blue;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  font-family: ${styles.bodyFont};
+  text-transform: uppercase;
+  padding: 1rem;
+  font-size: .8rem;
 `
 
-const Header = props => (
+const AboutLink = () => {
+  const [isOpen, setOpen] = useState(false)
+
+  return (
+    <React.Fragment>
+      <LinkItem
+        onMouseOver={() => setOpen(true)}
+        onMouseOut={() => setOpen(false)}
+      // to="/about"
+      >about</LinkItem>
+      {isOpen ? <AboutFiller /> : null}
+    </React.Fragment>
+  )
+};
+
+const Header = () => (
   <NavBar>
     <LogoLink to="/">
       <LogoImg src={logo} alt="Studio Swarts logo" />
     </LogoLink>
     <NavLinks>
-      <LinkItem>over</LinkItem>
-      <LinkItem>hallo</LinkItem>
+      <AboutLink />
+      <LinkItem to="#contact">contact</LinkItem>
     </NavLinks>
   </NavBar>
 )
