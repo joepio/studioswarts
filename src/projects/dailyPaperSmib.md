@@ -1,5 +1,5 @@
 ---
-title: "Daily Paper Smib"
+title: "Daily Paper X Smib"
 ---
 
 
