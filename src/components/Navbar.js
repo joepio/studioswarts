@@ -47,7 +47,7 @@ const AboutLink = () => {
       <LinkItem
         onMouseOver={() => setOpen(true)}
         onMouseOut={() => setOpen(false)}
-      // to="/about"
+        to="/about"
       >about</LinkItem>
       {isOpen ? <AboutFiller /> : null}
     </React.Fragment>

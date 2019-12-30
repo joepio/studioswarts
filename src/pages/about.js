@@ -1,17 +1,18 @@
 import React from 'react'
 import Layout from '../components/layout'
+import AboutFiller from '../components/AboutFiller'
 import styled from 'styled-components'
 
-const PageWrapper = styled.div`
-  background-color: black;
-  max-width: 800px;
-  color: white;
-  margin: auto;
+const AboutWrapper = styled.div`
+  position: relative;
+  height: 100vh;
+  z-index: 2;
 `
-
 const AboutPage = () => (
   <Layout>
-    <PageWrapper>Over mij</PageWrapper>
+    <AboutWrapper>
+      <AboutFiller />
+    </AboutWrapper>
   </Layout>
 )
 
