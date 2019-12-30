@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { styles } from '../styles'
 import logo from '../assets/logo.svg'
+import { Link } from 'gatsby'
 
 const mail = "s.swarts93@gmail.com"
 
@@ -34,7 +35,9 @@ const FooterWrapper = styled.footer`
 
 const Footer = () =>
   <FooterWrapper id="contact">
-    <LogoImg src={logo} alt="Studio Swarts logo" />
+    <Link to="/">
+      <LogoImg src={logo} alt="Studio Swarts logo" />
+    </Link>
     <p>
       <a href="tel:+310621210124">+31 (0) 621 210 124</a>
     </p>
@@ -44,7 +47,7 @@ const Footer = () =>
     <p>
       The Netherlands
     </p>
-  </FooterWrapper>
+  </FooterWrapper >
 
 
 export default Footer
