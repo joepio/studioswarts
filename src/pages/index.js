@@ -5,7 +5,7 @@ import Carousel from '../components/Carousel'
 
 import budPR from '../assets/images/projects/budPR/01.jpg'
 import casperBerlin from '../assets/images/projects/casperBerlin/01.jpg'
-import casperSleeptour from '../assets/images/projects/casperSleeptour/01.jpg'
+import casperSleep from '../assets/images/projects/casperSleeptour/01.jpg'
 import dailyPaperSmib from '../assets/images/projects/dailyPaperSmib/01.jpg'
 import eastpak2016 from '../assets/images/projects/eastpak2016/01.jpg'
 import eastpak2018Lissabon from '../assets/images/projects/eastpak2018Lissabon/01.jpg'
@@ -55,7 +55,7 @@ const HomeIndex = ({ data }) => {
         })} */}
         <ProjectPreview title="Budweiser PR" src={budPR} url="/projects/budPR" />
         <ProjectPreview title="Casper KaDeWe" src={casperBerlin} url="/projects/casperBerlin" />
-        <ProjectPreview title="Casper SleepTour" src={casperSleeptour} url="/projects/casperSleeptour" />
+        <ProjectPreview title="Casper SleepTour" src={casperSleep} url="/projects/casperSleep" />
         <ProjectPreview title="Daily Paper X Smib" src={dailyPaperSmib} url="/projects/dailyPaperSmib" />
         <ProjectPreview title="Eastpak Amsterdam" src={eastpak2016} url="/projects/eastpak2016" />
         <ProjectPreview title="Eastpak Lisbon" src={eastpak2018Lissabon} url="/projects/eastpak2018Lissabon" />
