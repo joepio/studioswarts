@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { styles } from '../styles'
 
 const Columns = styled.div`
   justify-self: center;
@@ -10,6 +11,8 @@ const Columns = styled.div`
   max-width: 1000px;
   margin: auto;
   margin-top: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 
   &::before,
   &::after {
@@ -17,6 +20,14 @@ const Columns = styled.div`
     flex-basis: 100%;
     width: 0;
     order: 2;
+  }
+
+  @media(max-width: ${styles.mediumScreen}) {
+    height: 3600px;
+  }
+
+  @media(max-width: ${styles.smallScreen}) {
+    height: auto;
   }
 `
 

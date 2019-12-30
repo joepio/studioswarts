@@ -31,6 +31,18 @@ const Wrapper = styled(Link)`
   &:nth-child(3n+1) { order: 1; }
   &:nth-child(3n+2) { order: 2; }
   &:nth-child(3n)   { order: 3; }
+
+  @media screen and (max-width: ${styles.mediumScreen}) {
+    width: calc(50% - 1rem);
+
+    &:nth-child(2n+1) { order: 1; }
+    &:nth-child(2n)   { order: 2; }
+  }
+
+  @media screen and (max-width: ${styles.smallScreen}) {
+    width: 100%;
+    order: initial !important;
+  }
 `
 
 const BackImg = styled.img`

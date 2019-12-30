@@ -52,7 +52,7 @@ const Heading = styled.a`
     opacity: 0.999;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: ${styles.mediumScreen}) {
     display: block;
   }
 `
