@@ -5,7 +5,7 @@ import Carousel from '../components/Carousel'
 
 import budPR from '../assets/images/projects/budPR/01.jpg'
 import casperBerlin from '../assets/images/projects/casperBerlin/01.jpg'
-import casperSleep from '../assets/images/projects/casperSleeptour/01.jpg'
+import casperSleep from '../assets/images/projects/casperSleep/01.jpg'
 import dailyPaperSmib from '../assets/images/projects/dailyPaperSmib/01.jpg'
 import eastpak2016 from '../assets/images/projects/eastpak2016/01.jpg'
 import eastpak2018Lissabon from '../assets/images/projects/eastpak2018Lissabon/01.jpg'
@@ -28,10 +28,6 @@ const HomeIndex = ({ data }) => {
     <Layout>
       <Helmet
         title="Studio Swarts - spatial design"
-        meta={[
-          { name: 'description', content: 'Sample' },
-          { name: 'keywords', content: 'sample, something' },
-        ]}
       ></Helmet>
       <Carousel />
       <Columns>

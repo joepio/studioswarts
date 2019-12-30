@@ -44,7 +44,7 @@ const LinkItem = styled(Link)`
   font-size: .8rem;
 `
 
-const AboutLink = () => {
+export const AboutLink = () => {
   const [isOpen, setOpen] = useState(false)
 
   return (

@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { styles } from '../styles'
 import logo from '../assets/logo.svg'
 import { Link } from 'gatsby'
+import { AboutLink } from './Navbar'
 
 const mail = "s.swarts93@gmail.com"
 
@@ -38,6 +39,9 @@ const Footer = () =>
     <Link to="/">
       <LogoImg src={logo} alt="Studio Swarts logo" />
     </Link>
+    <p>
+      <AboutLink />
+    </p>
     <p>
       <a href="tel:+310621210124">+31 (0) 621 210 124</a>
     </p>
