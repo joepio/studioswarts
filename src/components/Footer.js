@@ -5,7 +5,7 @@ import logo from '../assets/logo.svg'
 import { Link } from 'gatsby'
 import { AboutLink } from './Navbar'
 
-const mail = "s.swarts93@gmail.com"
+const mail = "steven@studioswarts.com"
 
 export const LogoImg = styled.img`
   position: relative;
