@@ -43,7 +43,7 @@ const Footer = () =>
       <AboutLink />
     </p>
     <p>
-      <a href="tel:+310621210124">+31 (0) 621 210 124</a>
+      <a href="tel:+310621210124">+31(0) 621 210 124</a>
     </p>
     <p>
       <a href={mail}>{mail}</a>
