@@ -6,13 +6,13 @@ import Layout from '../components/layout'
 import { styles } from '../styles'
 import styled from 'styled-components'
 
-const heroStyle = {
-  height: '50rem',
-  fontSize: '3rem',
-  overflow: 'hidden',
-  position: 'relative',
-  color: 'white',
-}
+const Hero = styled.div`
+  height: 50rem;
+  font-size: 3rem;
+  overflow: hidden;
+  position: relative;
+  color: white;
+`
 
 const heroImageStyle = {
   position: 'absolute',
@@ -22,15 +22,20 @@ const heroImageStyle = {
   bottom: 0,
 }
 
-const textStyle = {
-  textAlign: 'center',
-  fontSize: '1.2rem',
-  padding: '3rem',
-  maxWidth: '70vw',
-  color: 'white',
-  margin: 'auto',
-  fontFamily: styles.bodyFont,
-}
+const Text = styled.div`
+  text-align: left;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  padding: 3rem;
+  max-width: 50rem;
+  color: white;
+  margin: auto;
+  font-family: ${styles.bodyFont};
+
+  p {
+    margin-bottom: 1rem;
+  }
+`
 
 const ImgWrapper = styled.div`
   padding: 1rem;
@@ -59,14 +64,14 @@ export default ({ data }) => {
       <Helmet>
         <title>{post.frontmatter.title}</title>
       </Helmet>
-      <div style={heroStyle}>
+      <Hero>
         <Img
           style={heroImageStyle}
           fluid={images[1].node.childImageSharp.fluid}
         />
-      </div>
+      </Hero>
       <TitleComp>{post.frontmatter.title}</TitleComp>
-      <div style={textStyle} dangerouslySetInnerHTML={{ __html: post.html }} />
+      <Text dangerouslySetInnerHTML={{ __html: post.html }} />
       {images.map((img, index) => {
         // The first two images are for the cover
         if (index === 1 || index === 0) {
