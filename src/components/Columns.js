@@ -7,8 +7,9 @@ const Columns = styled.div`
   margin: 1rem;
   flex-flow: column wrap;
   align-content: space-between;
-  height: 2500px;
-  max-width: 1000px;
+  /* If you have flow errors on the homepage, play with this number! */
+  height: 3000px;
+  max-width: 1300px;
   margin: auto;
   margin-top: 5rem;
   padding-left: 2rem;
@@ -23,6 +24,7 @@ const Columns = styled.div`
   }
 
   @media(max-width: ${styles.mediumScreen}) {
+  /* If you have flow errors on the homepage, play with this number! */
     height: 3600px;
   }
 
