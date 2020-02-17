@@ -16,6 +16,7 @@ import kingpins from '../assets/images/projects/kingpins/01.jpg'
 import napapijri from '../assets/images/projects/napapijri/01.jpg'
 import panorama from '../assets/images/projects/panorama/01.jpg'
 import scotch from '../assets/images/projects/scotch/01.jpg'
+import sofiTukker from '../assets/images/projects/sofiTukker/01.jpg'
 import unilever from '../assets/images/projects/unilever/01.jpg'
 import wrangler from '../assets/images/projects/wrangler/01.jpg'
 import zalando from '../assets/images/projects/zalando/01.jpg'
@@ -47,6 +48,7 @@ const HomeIndex = ({ data }) => {
         <ProjectPreview title="Unilever" src={unilever} url="/projects/unilever" />
         <ProjectPreview title="Wrangler" src={wrangler} url="/projects/wrangler" />
         <ProjectPreview title="Zalando B&B" src={zalando} url="/projects/zalando" />
+        <ProjectPreview title="Sofi Tukker" src={sofiTukker} url="/projects/sofiTukker" />
       </Columns>
     </Layout>
   )
