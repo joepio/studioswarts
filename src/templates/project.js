@@ -11,6 +11,7 @@ const heroStyle = {
   fontSize: '3rem',
   overflow: 'hidden',
   position: 'relative',
+  color: 'white',
 }
 
 const heroImageStyle = {
@@ -26,6 +27,7 @@ const textStyle = {
   fontSize: '1.2rem',
   padding: '3rem',
   maxWidth: '70vw',
+  color: 'white',
   margin: 'auto',
   fontFamily: styles.bodyFont,
 }
@@ -44,7 +46,7 @@ const TitleComp = styled.h1`
   font-family: Faustina, serif;
   font-size: 4rem;
   text-align: center;
-  color: #13131354;
+  color: white;
   padding-top: 2rem;
   text-transform: uppercase;
 `
