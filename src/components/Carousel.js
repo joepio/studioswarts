@@ -127,10 +127,6 @@ const BannerLanding = props => {
     <CarouselWrapper>
       <BackImage key={currentProject.src} src={currentProject.src} />
       <HiddenImage key={currentProject.src} src={items[nextProjectNr].src} />
-      <h1>
-        Using innovative spatial design Studio Swarts creates mesmerising experiences making moments unforgettable by focussing on inspiring and connecting people.
-        Located in Utrecht, The Netherlands
-      </h1>
       <LinkBlock>
         {items.map(project => {
           if (project.title === currentProject.title) {

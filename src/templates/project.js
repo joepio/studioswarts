@@ -39,7 +39,7 @@ const Text = styled.div`
 
 const ImgWrapper = styled.div`
   padding: 1rem;
-  max-width: 70vw;R
+  max-width: 70vw;
   padding-top: 0;
   margin: auto;
   @media(max-width: 768px) {

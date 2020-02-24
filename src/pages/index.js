@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import styled from 'styled-components'
 import Layout from '../components/layout'
 import Carousel from '../components/Carousel'
 
@@ -26,6 +27,19 @@ import zalando from '../assets/images/projects/zalando/01.jpg'
 
 import ProjectPreview from '../components/ProjectPreview'
 import Columns from '../components/Columns'
+import { styles } from '../styles'
+
+const TitleComp = styled.h1`
+  margin: auto;
+  margin-top: 3rem;
+  font-family: ${styles.bodyFont};
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  color: white;
+  padding-top: 2rem;
+  max-width: 70vw;
+`
 
 const HomeIndex = ({ data }) => {
   return (
@@ -34,6 +48,17 @@ const HomeIndex = ({ data }) => {
         title="Studio Swarts - spatial design"
       ></Helmet>
       <Carousel />
+      <TitleComp>
+        <p>
+          Using innovative spatial design, Studio Swarts creates mesmerising experiences.
+        </p>
+        <p>
+          Making moments unforgettable by focussing on inspiring and connecting people.
+        </p>
+        <p>
+          Located in Utrecht, The Netherlands
+        </p>
+      </TitleComp>
       <Columns>
         <ProjectPreview title="Budweiser PR" src={budPR} url="/projects/budPR" />
         <ProjectPreview title="BudweiserXMiami 2020" src={budXMiami} url="/projects/budXMiami" />
