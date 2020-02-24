@@ -1,6 +1,6 @@
 # Studio Swarts
 
-[Demo hier](https://joepio.github.io/studioswarts/)
+[Check it out](http://studioswarts.com/)
 
 ## Usage
 
