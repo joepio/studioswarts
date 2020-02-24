@@ -35,10 +35,11 @@ const AboutFiller = () =>
   <Outer>
     <Inner>
       <p>
-        Working on different projects for well-known, brave start-ups, national and international companies, I accumulated considerable experience in design, shows and project management.
+        Working on different projects for well-known, brave start-ups, national and international companies, gave us experience in design and project management.
+        Creating an interior design, brand activation and shows from scratch or a full concept, one of the primary aims is to be always looking for the right fit by bringing a team together out of collaborations with agencies and freelancers or to only assist on the project.
       </p>
       <p>
-        I’m fascinated by the impact spatial design has on the emotional understanding of one’s surroundings. For me every space is an experience. Whether you design an office or a festival stage; I believe you can translate a concept both conscious and unconsciously to people in different layers of design.
+        A big fascination by the impact spatial design has on the emotional understanding of one’s surroundings is one of the engines of the projects. Every space is an experience. Whether there’s an office or a festival stage to be designed; there are multiple possibilities to translate a concept both consciously and unconsciously to people in different layers of design. People can be moved by it!
       </p>
     </Inner>
   </Outer>

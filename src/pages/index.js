@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 import Carousel from '../components/Carousel'
 
 import budPR from '../assets/images/projects/budPR/01.jpg'
+import budXMiami from '../assets/images/projects/budXMiami/01.jpg'
 import casperBerlin from '../assets/images/projects/casperBerlin/01.jpg'
 import casperSleep from '../assets/images/projects/casperSleep/01.jpg'
 import dailyPaperSmib from '../assets/images/projects/dailyPaperSmib/01.jpg'
@@ -35,6 +36,7 @@ const HomeIndex = ({ data }) => {
       <Carousel />
       <Columns>
         <ProjectPreview title="Budweiser PR" src={budPR} url="/projects/budPR" />
+        <ProjectPreview title="BudweiserXMiami 2020" src={budXMiami} url="/projects/budXMiami" />
         <ProjectPreview title="Casper KaDeWe" src={casperBerlin} url="/projects/casperBerlin" />
         <ProjectPreview title="Casper SleepTour" src={casperSleep} url="/projects/casperSleep" />
         <ProjectPreview title="Daily Paper X Smib" src={dailyPaperSmib} url="/projects/dailyPaperSmib" />
@@ -47,7 +49,7 @@ const HomeIndex = ({ data }) => {
         <ProjectPreview title="Kingpins" src={kingpins} url="/projects/kingpins" />
         <ProjectPreview title="Napapijri" src={napapijri} url="/projects/napapijri" />
         <ProjectPreview title="Panorama" src={panorama} url="/projects/panorama" />
-        <ProjectPreview title="Rabobank" src={rabobank} url="/projects/scotch" />
+        <ProjectPreview title="Rabobank" src={rabobank} url="/projects/rabobank" />
         <ProjectPreview title="Scotch & Soda" src={scotch} url="/projects/scotch" />
         <ProjectPreview title="Sofi Tukker" src={sofiTukker} url="/projects/sofiTukker" />
         <ProjectPreview title="Unilever" src={unilever} url="/projects/unilever" />

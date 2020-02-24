@@ -39,7 +39,7 @@ const Text = styled.div`
 
 const ImgWrapper = styled.div`
   padding: 1rem;
-  max-width: 70vw;
+  max-width: 70vw;R
   padding-top: 0;
   margin: auto;
   @media(max-width: 768px) {
@@ -48,6 +48,7 @@ const ImgWrapper = styled.div`
 `
 
 const TitleComp = styled.h1`
+  margin-top: 3rem;
   font-family: Faustina, serif;
   font-size: 4rem;
   text-align: center;
